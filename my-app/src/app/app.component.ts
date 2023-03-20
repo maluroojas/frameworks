@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-app';
-}
+  nome = 'malu';
+  count = 10;
+  
+    
+  }
+  function menos() {
+console.log ('chamei a funcao -');
+
+  }
+  function mais() {
+    console.log ('chamei a funcao +');
+  }
+
+
