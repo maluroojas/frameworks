@@ -3,13 +3,19 @@
 <label for="lblHero">Digite o nome do heroi</label>
 <input type="text" name="txtHero" id="" />
 <button> Add Hero</button>
+</div>
 
-
+<div class="heroes">
+    <ul> 
+        <li *ngFor="let hero of heroes"> {{ hero }} </li>
+    </ul>
     </div>
-  
-<ul> 
-    <li *ngFor="let hero of heroes"> {{ hero }} </li>
+    <div class="card-hero"> 
+        <div class="titulo">
+            <img src="capitao.jpeg" alt="" class="photo"/>
 
-</ul>
-<h2>  {{ hero.nome}}</h2>
+        <h2>  {{ hero.nome}}</h2>
+    </div>
+    <div class="content"> Lorem ipsum dolor sit amet.</div>
+</div>
 </div>
