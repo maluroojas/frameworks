@@ -1,6 +1,13 @@
 .container{
     background: white;
-    height: 100px;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    margin: 0 auto;
+    border: 1px solid black;
+    width: 80%;
+    flex-wrap:wrap;
+
 
 }
 
@@ -8,4 +15,58 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
+    width: 100%;
+    align-items: center;
+    padding: 30px; 
+    background-color: blueviolet;
+
 }
+.container .header label {
+    font-size: 22px;
+}
+.container .header input {
+    font-size: 22px;
+    background-color: antiquewhite;
+
+}
+.container .header button {
+    font-size: 22px;
+    background-color: blue;
+    color: aliceblue;
+    width: 150px;
+    height: 40px;
+}
+
+.container .heroes {
+    width: 100%;
+    padding: 30px;
+    font-size: 20px;
+}
+
+.container .heroes ul li  {
+  list-style: none;
+   border: 1px solid black;
+   padding: 10px;
+   margin: 5px;
+   transition: background 500ms;
+}
+.container .heroes ul li:hover {
+    background-color: beige;
+
+}
+.container .card-hero {
+    background-color: beige;
+    width: 400px;
+    height: 250;
+    margin-left: 35px;
+border-radius: 15px;
+padding: 15px;
+border: 1px solid #515151 ;
+}
+
+.container .card-hero .photo{
+    height: 80px ;
+    width: 20x;
+}
+
+   
