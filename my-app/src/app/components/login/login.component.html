@@ -1,28 +1,34 @@
 <div class="container">
     <div class="login">
-        <h2>sing in</h2>
-<div class="error">
+        <h2>Sing in</h2>
+<div class="error" *ngIf="isError">
     <i class="bx bxs-message-error"></i>
-    <span> login ou senha icorretos!</span>
+    <span> Login or password is incorrect!</span>
     </div>
+
+    <div class="sucess" *ngIf="isSucess">
+        <i class="bx bxs-message-square-check"></i>
+        <span> Login Aproved</span>      
+    </div>
+    
         <div class="input">
             <i class='bx bx-envelope'></i>
-            <input type="text" name="login" id="login" value="e-mail" />
+            <input type="text" name="login" id="login" placeholder="E-mail" [(ngModel)]="user" />
         </div>
         <div class="input">
             <i class='bx bxs-lock'></i>
-            <input type="text" name="password" id="password" value="password" />
+            <input type="password" name="password" id="password" placeholder="Password" [(ngModel)]="pwd" />
             <i class='bx bxs-low-vision'></i>
         </div>
         <div class="remember">
             <div>
                 <input type="checkbox" name="remember" id="remember" />
-                <a href="#">remember me</a>
+                <h3>Remember me</h3>
             </div>
-            <a href="#">forgot password?</a>
+            <a href="#">Forgot password?</a>
         </div>
-        <button class="button"> SIGN IN</button>
-        <h3> dont have a account? create</h3>
+        <button class="button" (click)="login()">SIGN IN</button>
+        <h3>Dont have a account? create</h3>
 
     </div>
 </div>
