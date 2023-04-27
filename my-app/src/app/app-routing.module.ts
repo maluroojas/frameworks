@@ -4,11 +4,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { HeroComponent } from './compnents/hero/hero.component';
 import { LoginComponent } from './components/login/login.component';
 import { CreateUserComponent } from './components/create-user/create-user.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 const routes: Routes = [
 {path: 'heroes', component: HeroComponent},
 {path:'login', component: LoginComponent},
 {path: 'create', component: CreateUserComponent},
+{path: 'dashboard', component: DashboardComponent},
 {path:'', redirectTo: '/login', pathMatch: 'full'},
 {path: '**', component: PageNotFoundComponent},                      
 ];

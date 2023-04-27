@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
-    background-color: #653b83;
-    font-family: Arial, sans-serif;
+    background:linear-gradient(#ff82f3, #5f0378);
   }
   
   .container {
@@ -18,14 +22,16 @@ body {
   
   .error-code {
     font-size: 72px;
-    font-weight: bold;
+    font-weight:bolder;
   }
   
   .error-description {
-    font-size: 24px;
+    font-size: 29px;
+    
   }
   
   .error-image {
-    background-image: url(./img/gato.gif);
     margin-left: 70px;
+    background-image: url(./img/gato.gif);
   }
+
