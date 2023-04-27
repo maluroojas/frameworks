@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <div class="center">
+        <div class="conteiner">
+
+            <input autofocus type="text" class="screen" id="screen" value autocomplete="off" disabled>
+
+            <button id="open_parantheses" onclick="addValueToResult(' ( ')">(</button>
+            <button id="close_parentheses" onclick="addValueToResult(' ) ')">)</button>
+            <button id="clear" onclick="screen.value = null">C</button>
+            <button id="backspace" onclick="backspaceResult()">⌫</button>
+
+            <button class= "btn" onclick="addValueToResult(7)"><img src="img/num7.jpg">
+            </button>
+            <button class= "btn" onclick="addValueToResult(8)"><img src="img/num8.jpg">
+            </button>
+            <button class= "btn" onclick="addValueToResult(9)"><img src="img/num9.jpg">
+            </button>
+            <button id="divide" onclick="addValueToResult(' / ')">÷</button>
+
+            <button class= "btn" onclick="addValueToResult(4)"><img src="img/num4.jpg">
+            </button>
+            <button class= "btn" onclick="addValueToResult(5)"><img src="img/num5.jpg">
+            </button>
+            <button class= "btn" onclick="addValueToResult(6)"><img src="img/num6.jpg">
+            </button>
+            <button id="multiply" onclick="addValueToResult(' * ')">x</button>
+
+            <button class= "btn" onclick="addValueToResult(1)"><img src="img/num1.jpg">
+            </button>
+            <button class= "btn" onclick="addValueToResult(2)"><img src="img/num2.jpg">
+            </button>
+            <button class= "btn" onclick="addValueToResult(3)"><img src="img/num3.jpg">
+            </button>
+            <button id="subtract" onclick="addValueToResult(' - ')">-</button>
+            <button class= "btn" onclick="addValueToResult(0)"><img src="img/num0.jpg">
+            </button>
+            <button id="decimal" onclick="addValueToResult('.')">,</button>
+            <button id="result" onclick="calculateResult()">=</button>
+            <button id="sum" onclick="addValueToResult(' + ')">+</button>
+
+        </div>
+    </div>
+</body>
+
+</html>
