@@ -1,33 +1,54 @@
+<link
+  href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+  rel="stylesheet"
+/>
+
 <div class="container">
-    <div class="login">
-        <h2>Create your account</h2>
-<div class="error" *ngIf="isError">
-    <i class="bx bxs-message-error"></i>
-    <span> Login or password is incorrect!</span>
+  <div class="create-user">
+    <h2>Create your account</h2>
+
+    <div class="error" *ngIf="isError">
+      <i class="bx bxs-comment-error" style="color: #9733ff"></i>
+      <span>Passwords do not match</span>
+    </div>
+    <div class="sucess" *ngIf="isSucess">
+      <i class="bx bxs-comment-error" style="color: #9733ff"></i>
+      <span>Account created successfully</span>
     </div>
 
-    <div class="sucess" *ngIf="isSucess">
-        <i class="bx bxs-message-square-check"></i>
-        <span> Login Aproved</span>      
+    <div class="input">
+      <i class="bx bxs-envelope" style="color: #9733ff"></i>
+      <input
+        type="text"
+        name="login"
+        id="login"
+        placeholder="E-mail"
+        [(ngModel)]="user"
+      />
     </div>
-        <h3>Your email address</h3>
-        <div class="input">
-            <i class='bx bx-envelope'></i>
-            <input type="text" name="login" id="login" placeholder="E-mail" [(ngModel)]="user" />
-        </div>
-        <h3>Choose a password</h3>
-        <div class="input">
-            <i class='bx bxs-lock'></i>
-            <input type="password" name="password" id="password" placeholder="Password" [(ngModel)]="pwd" />
-            <i class='bx bxs-low-vision'></i>
-        </div>
-        <h3>Type the password again</h3>
-        <div class="input">
-            <i class='bx bxs-lock'></i>
-            <input type="password" name="password" id="password" placeholder="Password" [(ngModel)]="pwd" />
-            <i class='bx bxs-low-vision'></i>
-        </div>
-        
-        <button class="button" (click)="login()">SIGN IN</button>
+    <div class="input">
+      <i class="bx bxs-lock-alt" style="color: #9733ff"></i>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Password"
+        [(ngModel)]="pwd"
+      />
+      <i class="bx bx-low-vision" style="color: #9733ff"></i>
     </div>
+    <div class="input">
+      <i class="bx bxs-lock-alt" style="color: #9733ff"></i>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Password"
+        [(ngModel)]="double"
+      />
+      <i class="bx bx-low-vision" style="color: #9733ff"></i>
+    </div>
+
+    <button class="button" (click)="login()">Welcome</button>
+  </div>
 </div>
