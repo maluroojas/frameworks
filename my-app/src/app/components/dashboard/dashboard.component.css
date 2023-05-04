@@ -9,72 +9,18 @@
   width: 80%;
   height: 100vh;
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 200px 1fr;
   grid-template-rows: 80px 1fr;
+  box-shadow: 0 0 20px 10px #ccc;
+  border-radius: 20px;
 }
 
 .menu {
-  background: #fff;
-  border: 1px solid black;
-}
-
-.content {
-  background: #f0f0f0;
-  border: 1px solid black;
-}
-
-.content .overview {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 30px 20px;
-}
-
-.content .overview .box-dir {
-  display: flex;
-  justify-content: end;
-  gap: 10px;
-}
-
-.today {
-  width: 80px;
-  height: 30px;
-  border-radius: 20px;
-  text-align: center;
-  background: #d0d0d0;
-  color: #afafaf;
-  padding: 4px;
-}
-
-.month {
-  width: 80px;
-  height: 30px;
-  border-radius: 20px;
-  text-align: center;
-  background: #d0d0d0;
-  color: #afafaf;
-  padding: 4px;
-}
-
-.year {
-  width: 80px;
-  height: 30px;
-  border-radius: 20px;
-  text-align: center;
-  background: #d0d0d0;
-  color: #afafaf;
-  padding: 4px;
-}
-
-button{
-    border: 2px solid #3e87f0;
-    width: 100px;
-    height: 35px;
-    box-shadow: 1px 1px #afafaf;
+  background: #f7f8fa;
 }
 
 .header1 {
   background: #4375f9;
-  border: 1px solid black;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -92,7 +38,6 @@ button{
 
 .header2 {
   background: #fff;
-  border: 1px solid black;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -112,16 +57,89 @@ button{
 
 .menu ul {
   margin-top: 20px;
-  margin-left: 30px;
+  margin-left: 10px;
 }
 
 .menu li {
   padding: 10px;
   list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 18px;
+}
+
+.menu li:hover, .menu li a:hover {
+color: #947dd2;
 }
 
 .menu li a {
   text-decoration: none;
   font: 20px;
   color: #696969;
+  margin-left: 15px;
+
+}
+
+.menu li i{
+  font-size: 22px;
+}
+
+.content .ad{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 180px;
+  margin: 30px;
+  gap: 20px;
+}
+
+.content .ad .img {
+  background: #fbe5ca;
+}
+
+.content .ad .graph{
+  background: #f0edfe;
+}
+
+section{
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  grid-template-rows: 270px;
+  margin: 30px;
+  gap: 20px;
+}
+
+section .box1{
+background: #faf;
+}
+
+section .box2{
+background: #3af;
+}
+
+.title{
+  background: #e4f7f0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+ padding: 5px 25px;
+ border-radius: 5px;
+ box-shadow: 0 0 5px 4px #eee;
+}
+
+.title button{
+  background: #40c17d;
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  width: 26px;
+  height: 26px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.title span{
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 15px;
+
 }
