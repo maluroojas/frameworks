@@ -4,10 +4,20 @@
   font-family: "Poppins", sans-serif;
 }
 
+h3{
+  font-size: 16px;
+}
+
+h4{
+font-size: 12px;
+color: #bab4e5;
+margin-top: 5px;
+}
+
 .container {
   margin: 0 auto;
   width: 80%;
-  height: 100vh;
+  height: 800px;
   display: grid;
   grid-template-columns: 200px 1fr;
   grid-template-rows: 80px 1fr;
@@ -108,8 +118,21 @@ section{
   gap: 20px;
 }
 
-section .box1{
-background: #faf;
+section .box1 .member{
+  background: #f8fafd;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 80px 80px 80px;
+  margin: 20px 0;
+} 
+
+section .box1 .member .card-member{
+display: grid;
+grid-template-columns: 80px 1fr;
+}
+
+section .box1 .member .card-member img{
+width: 50px;
 }
 
 section .box2{
