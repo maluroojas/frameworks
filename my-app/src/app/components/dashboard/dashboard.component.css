@@ -5,7 +5,7 @@
 }
 
 h3{
-  font-size: 16px;
+  font-size: 14px;
 }
 
 h4{
@@ -14,13 +14,18 @@ color: #bab4e5;
 margin-top: 5px;
 }
 
+h5{
+  font-size: 10px;
+  margin-top: 10px;
+}
+
 .container {
   margin: 0 auto;
-  width: 80%;
-  height: 800px;
+  width: 90%;
+  height: 900px;
   display: grid;
-  grid-template-columns: 200px 1fr;
-  grid-template-rows: 80px 1fr;
+  grid-template-columns: 170px 1fr 300px;
+  grid-template-rows: 60px 1fr;
   box-shadow: 0 0 20px 10px #ccc;
   border-radius: 20px;
 }
@@ -67,7 +72,7 @@ margin-top: 5px;
 
 .menu ul {
   margin-top: 20px;
-  margin-left: 10px;
+  
 }
 
 .menu li {
@@ -98,7 +103,7 @@ color: #947dd2;
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 180px;
-  margin: 30px;
+  margin: 20px 30px;
   gap: 20px;
 }
 
@@ -112,9 +117,9 @@ color: #947dd2;
 
 section{
   display: grid;
-  grid-template-columns: 1fr 300px;
+  grid-template-columns: 1fr 450px;
   grid-template-rows: 270px;
-  margin: 30px;
+  margin: 20px 30px;
   gap: 20px;
 }
 
@@ -122,13 +127,16 @@ section .box1 .member{
   background: #f8fafd;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 80px 80px 80px;
+  grid-template-rows: 60px 60px 60px;
   margin: 20px 0;
+  padding: 20px;
 } 
 
 section .box1 .member .card-member{
 display: grid;
-grid-template-columns: 80px 1fr;
+grid-template-columns: auto 1fr;
+align-items: center;
+gap: 10px;
 }
 
 section .box1 .member .card-member img{
@@ -141,7 +149,7 @@ background: #3af;
 
 .title{
   background: #e4f7f0;
-  height: 60px;
+  height: 45px;
   display: flex;
   align-items: center;
  padding: 5px 25px;
@@ -164,5 +172,32 @@ background: #3af;
   font-size: 18px;
   font-weight: 600;
   margin-left: 15px;
+}
 
+.container .user-info {
+grid-column: 3 / 4;
+grid-row: 1 / 3;
+}
+
+.content .activity{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 80px 80px;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.content .activity div {
+background: #f8fafd;
+}
+
+.activity .card-member img {
+width: 40px;
+}
+
+.activity .card-member {
+display: grid;
+grid-template-columns: auto 1fr;
+gap: 20px;
+padding: 10px;
 }
