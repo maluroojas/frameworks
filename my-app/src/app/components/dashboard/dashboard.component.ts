@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class DashboardComponent {
 
+  constructor(private router:Router){ }
+
+  addTask(){
+    console.log('add task');
+    this.router.navigateByUrl('/task')
+  }
+
+  
 }
