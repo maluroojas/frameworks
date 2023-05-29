@@ -7,6 +7,7 @@
         name="txtNome"
         id="txtNome"
         placeholder="Digite o nome da tarefa"
+        [formControl]="nome"
       />
 
       <label for="txtdesc">Descrição</label>
@@ -15,6 +16,7 @@
         name="txtDesc"
         id="txtDesc"
         placeholder="Digite a descrição da tarefa"
+        [formControl]="descricao"
       />
 
       <label for="txtresp">Responsável</label>
@@ -23,6 +25,7 @@
         name="txtResp"
         id="txtResp"
         placeholder="Digite o responsável da tarefa"
+        [formControl]="responsavel"
       />
 
       <label for="txtInicio">Data Início</label>
@@ -34,7 +37,7 @@
       <div class="button2"></div>
         <div class="button">
             <button>Cancelar</button>
-            <button>Cadastrar</button>
+            <button (click)="cadastrar()">Cadastrar</button>
         </div>
 
     </div>
