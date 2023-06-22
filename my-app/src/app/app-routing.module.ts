@@ -6,6 +6,7 @@ import { LoginComponent } from './components/login/login.component';
 import { CreateUserComponent } from './components/create-user/create-user.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { TaskComponent } from './components/task/task.component';
+import { TimeComponent } from './time/time.component';
 
 const routes: Routes = [
 {path: 'heroes', component: HeroComponent},
@@ -13,6 +14,7 @@ const routes: Routes = [
 {path: 'create', component: CreateUserComponent},
 {path: 'dashboard', component: DashboardComponent},
 {path: 'task', component: TaskComponent},
+{path: 'time', component: TimeComponent},
 {path:'', redirectTo: '/login', pathMatch: 'full'},
 {path: '**', component: PageNotFoundComponent},                      
 ];

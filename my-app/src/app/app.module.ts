@@ -12,6 +12,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { TaskComponent } from './components/task/task.component';
 import { EquipeComponent } from './components/equipe/equipe.component';
 import { TodoListComponent } from './components/todo-list/todo-list.component';
+import { TimeComponent } from './time/time.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { TodoListComponent } from './components/todo-list/todo-list.component';
     DashboardComponent,
     TaskComponent,
     EquipeComponent,
-    TodoListComponent
+    TodoListComponent,
+    TimeComponent
   ],
   imports: [
     BrowserModule,

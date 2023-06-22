@@ -10,11 +10,24 @@ export class DashboardComponent {
 
   constructor(private router:Router){ }
 
+
   tasks = [];
+  time = [];
 
   addTask(){
     this.router.navigateByUrl('/task', {
       state: this.tasks,
+
+      
+    }
+    );
+  }
+
+  addTime(){
+    this.router.navigateByUrl('/time', {
+      state: this.time,
+
+      
     }
     );
   }
